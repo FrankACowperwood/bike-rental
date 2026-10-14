@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#bicycles {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.bike-card {
+    width: 220px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+button {
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+#rentals {
+    margin-top: 20px;
+}
+
+.rental-card {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
