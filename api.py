@@ -10,8 +10,10 @@ from rental import (
 )
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
+from database import init_database
 
 app = FastAPI()
+init_database()
 app.mount("/static", StaticFiles(directory="."), name="static")
 
 app.add_middleware(
